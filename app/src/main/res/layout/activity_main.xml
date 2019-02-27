@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/background"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textStyle="bold|italic"
+            android:text="Enter Weight"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/poundsInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:hint="Weight in Pounds"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/enterHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textStyle="bold|italic"
+            android:text="Enter Height"
+            android:textColor="#000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/feetInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:hint="Height in Feet"
+            android:textSize="30dp" />
+        <!-- SPACE -->
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+        <EditText
+            android:id="@+id/inchesInput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edittext"
+            android:gravity="center"
+            android:hint="Height in Inches"
+            android:textSize="30dp" />
+        <!-- SPACE -->
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+        <Button
+            android:id="@+id/button"
+            android:background="@drawable/editbutton"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcBMI"
+            android:text="Calculate BMI" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/bmiFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:padding="20dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+        <Space
+        android:layout_width="1dp"
+        android:layout_height="3dp"/>
+
+        <TextView
+            android:id="@+id/health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#00FF00"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:background="@android:color/transparent"
+            android:text="" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
